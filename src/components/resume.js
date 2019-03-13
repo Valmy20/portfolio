@@ -78,12 +78,12 @@ export default class Resume extends Component {
 
               <div className="skills">
                 <h1>Skills</h1>
-                <Skill name="Ruby on Rails" percentage="80" />
-                <Skill name="TDD" percentage="60" />
-                <Skill name="Docker" percentage="60" />
-                <Skill name="React" percentage="70" />
-                <Skill name="React Native" percentage="57" />
-                <Skill name="Git" percentage="73" />
+                <Skill name="Ruby on Rails" percentage="70" />
+                <Skill name="TDD" percentage="50" />
+                <Skill name="Docker" percentage="50" />
+                <Skill name="React" percentage="56" />
+                <Skill name="React Native" percentage="56" />
+                <Skill name="Git" percentage="63" />
               </div>
             </Cell>
           </Grid>

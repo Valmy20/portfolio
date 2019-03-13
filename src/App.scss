@@ -200,6 +200,7 @@ $desktop: "(min-width: 1024px)";
     .resume-grid {
       .about-info {
         text-align: center;
+        padding: 10px;
         .info {
           display: flex;
           flex-direction: column;
@@ -275,11 +276,13 @@ $desktop: "(min-width: 1024px)";
   }
 }
 
+
+// ************ skills ********* //
 .progress-bar {
   position: relative;
   background: #B0BEC5;
   height: 6px;
-  width: 450px;
+  width: 35vw;
   border: none;
 }
 .filler {
@@ -288,7 +291,7 @@ $desktop: "(min-width: 1024px)";
   transition: width .2s ease-in;
 }
 
-
+// ******************** //
 @media #{$smartphone} {
   .banner-text h1 {
     font-size: 2.5em;
@@ -299,6 +302,24 @@ $desktop: "(min-width: 1024px)";
   .navbar-logo {
     display: none;
   }
+  .progress-bar {
+    width: 70vw;
+  }
+  .resume-body {
+    .name {
+      margin: auto;
+    }
+    margin: 0;
+    padding: 0;
+    .resume {
+      margin: 0;
+      padding: 0;
+      .resume-grid {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
 }
 @media #{$tablet} {
   .banner-text h1 {
@@ -307,6 +328,7 @@ $desktop: "(min-width: 1024px)";
   .mdl-layout__drawer-button {
     display: none !important;
   }
+
 }
 @media #{$desktop} {
   .banner-text h1 {
