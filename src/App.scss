@@ -1,0 +1,318 @@
+$smartphone: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+.header-color {
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2C3E50 , #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2C3E50,#4CA1AF ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+ text-align: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background-image: url('./imgs/background-stars.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+ webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ height:100%;
+ width:100%;
+}
+
+.mdl-layout__drawer-button {
+  background: transparent !important;
+}
+
+.mdl-layout__drawer-button:focus {
+  outline: none !important;
+}
+.navbar-logo {
+  color: white;
+}
+.avatar-img {
+  height: 50px;
+  width: 50px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.banner-text {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text h1, h4 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 1px solid white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 1.4em;
+  padding: 1em;
+  text-align: center;
+}
+
+.social-links {
+  justify-content: space-between;
+}
+
+.social-links i {
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.landing-page {
+
+}
+
+// ********** projects component ********* //
+.projects-grid {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  .div-card {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      float: left;
+      margin: 15px;
+    }
+  }
+  @media #{$smartphone} {
+    .div-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+
+// ********** contact component ********* //
+.contact-body {
+
+  height:100%;
+  width:100%;
+  @media #{$smartphone} {
+    height: 200vh;
+  }
+  @media #{$tablet} {
+    height: 160vh;
+  }
+  @media #{$desktop} {
+    position: fixed;
+  }
+  .contact-grid {
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 90%;
+    .contact-info-left {
+        text-align: center;
+        padding: 20px;
+        h2 {
+          font-size: 3em;
+          color: #607D8B;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #607D8B;
+          text-align: center;
+          padding: 30px;
+        }
+        @media #{$smartphone} {
+          h2 {
+            font-size: 2.5em;
+          }
+        }
+    }
+
+    .contact-info-right {
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 3em;
+        color: white;
+        font-weight: bold;
+      }
+
+      div {
+        display: flex;
+        background: rgba(133, 152, 188, 0.6);
+        border-radius: 50px;
+        margin-bottom: 8px;
+        width: 100%;
+        padding: 10px 17px 0px;
+        align-items: center;
+
+        p {
+          font-size: 1.6em;
+          font-weight: bold;
+          margin-top: 6px;
+          color: white;
+        }
+        @media #{$smartphone} {
+          p {
+            font-size: 1.3em;
+          }
+        }
+
+        i {
+          margin-bottom: 10px;
+          font-size: 2.5em;
+          font-weight: bold;
+          padding: 10px;
+          color: #607D8B;
+        }
+      }
+
+    }
+  }
+
+}
+
+// ******* resume ******* //
+.resume-body {
+  .resume {
+    .resume-grid {
+      .about-info {
+        text-align: center;
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .name {
+            margin-top: 70px;
+          }
+          .profission {
+            color: #90A4AE;
+            font-size: 1.7em;
+            margin-bottom: 5px;
+          }
+          .info_title {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            margin-top: 25px;
+          }
+        }
+      }
+      .education-info {
+        background: #3d6d81;
+        padding: 30px;
+        .education {
+          h1 {
+            font-size: 3em;
+            color: white;
+          }
+          .education-component p, h4 {
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .experience {
+          h1 {
+            font-size: 3em;
+            color: white;
+          }
+          .experience-component p, h4 {
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .skills {
+          h1 {
+            font-size: 3em;
+            color: white;
+          }
+          .skill {
+            .grid-skill {
+              display: flex;
+              justify-content: flex-start;
+            }
+            .skill-name {
+              display: flex;
+              justify-content: flex-start;
+              padding-top: 10px;
+              p {
+                color: white;
+                font-weight: bold;
+                font-size: 1.5em;
+              }
+            }
+            .skill-progress {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.progress-bar {
+  position: relative;
+  background: #B0BEC5;
+  height: 6px;
+  width: 450px;
+  border: none;
+}
+.filler {
+  background: #E64A19;
+  height: 100%;
+  transition: width .2s ease-in;
+}
+
+
+@media #{$smartphone} {
+  .banner-text h1 {
+    font-size: 2.5em;
+  }
+  .navigation-desktop {
+    display: none !important;
+  }
+  .navbar-logo {
+    display: none;
+  }
+}
+@media #{$tablet} {
+  .banner-text h1 {
+    font-size: 4em;
+  }
+  .mdl-layout__drawer-button {
+    display: none !important;
+  }
+}
+@media #{$desktop} {
+  .banner-text h1 {
+    font-size: 5em;
+  }
+  .mdl-layout__drawer-button {
+    display: none !important;
+  }
+}
