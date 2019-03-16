@@ -12,17 +12,17 @@ class App extends Component {
 
               <Header className="header-color" title={<Link to="/" className="navbar-logo"><i className="fas fa-home"></i></Link>}>
                   <Navigation className="navigation-desktop">
-                      <Link to="/resume">Resume</Link>
-                      <Link to="/projects">Projects</Link>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/resume">Resumo</Link>
+                      <Link to="/projects">Projetos</Link>
+                      <Link to="/contact">Contato</Link>
                   </Navigation>
               </Header>
-              <Drawer className="drawer-mobile" title="Title">
+              <Drawer className="drawer-mobile">
                   <Navigation>
                     <Link to="/">Home</Link>
-                    <Link to="/resume">Resume</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/resume">Resumo</Link>
+                    <Link to="/projects">Projetos</Link>
+                    <Link to="/contact">Contato</Link>
                   </Navigation>
               </Drawer>
               <Content>

@@ -9,8 +9,7 @@ export default class LandingPage extends Component {
           <Cell col={12}>
             <div className="banner-text">
               <div className="content">
-                <h1>Welcome</h1>
-                <h4>Web Developer</h4>
+                <h1>Web Developer</h1>
                 <hr/>
                 <p>React | React Native | Ruby on Rails | Git | Docker | TDD</p>
                 <div className="social-links">
